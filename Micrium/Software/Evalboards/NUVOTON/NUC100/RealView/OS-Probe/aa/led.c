@@ -46,8 +46,6 @@ void Top_W_On(void)
 		Light_Init();
 	   	TOP_W = 0;
 
-		Scen_Send(G_SENCE_WT,0x00);
-
 		Scen_Send(0xD7,System.Dsp.photo.Scene[G_SENCE_WT].Sharpness) ; 		    //Èñ¶È
         OSTimeDly(1); 		
 		Scen_Send(0xD8,System.Dsp.photo.Scene[G_SENCE_WT].Saturation) ;			//±¥ºÍ¶È
@@ -57,7 +55,8 @@ void Top_W_On(void)
 
 		Scen_Send(0xE5, G_SENCE_WT); 
 		OSTimeDly(5); 
-		
+
+//		Scen_Send(G_SENCE_WT,0x00);
 		System.Led.Statu = TOP_WHITE_ON ; 	
 		ADC_Checking(ADC_CK_VLT_T_W,ADC_RSD_T_W );
 	}
