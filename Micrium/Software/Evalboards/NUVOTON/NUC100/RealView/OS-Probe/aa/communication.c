@@ -893,8 +893,7 @@ int32_t DrvFMC_Erase(uint32_t u32addr)
         FMC->ISPCON.ISPFF = 1;
 //        return E_DRVFMC_ERR_ISP_FAIL;
 		return 0;
-    }
-    
+    }   
     return 0;
 }
 
@@ -916,9 +915,7 @@ int32_t DrvFMC_Write(uint32_t u32addr, uint32_t u32data)
         FMC->ISPCON.ISPFF = 1;
 //        return E_DRVFMC_ERR_ISP_FAIL;
 		return 0;
-    }
-
-    
+    }   
     return 0;
 }
 

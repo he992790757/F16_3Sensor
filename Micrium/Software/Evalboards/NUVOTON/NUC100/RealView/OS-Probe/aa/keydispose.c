@@ -228,8 +228,6 @@ void KeyInfoDispose()
 				}break ; 
 			case 5 ://check: 左白光 右白光 左红外， 右红外 view:翻页 放大
 				{
-
-					
 					//	PhotoDelAll();
 					if(System.Led.Statu == C608_PWR_ON)
 					{
